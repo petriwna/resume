@@ -1,0 +1,69 @@
+.list {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__button {
+    width: 44px;
+    height: 44px;
+    cursor: none;
+    border: none;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: var(--gray-lightest);
+
+    &--telegram {
+      background-color: var(--social-telegram);
+    }
+
+    &--github {
+      padding: 0;
+      background-color: var(--white);
+    }
+
+    &--not-circle {
+      border-radius: 2px;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  &__icon {
+    fill: var(--gray-default);
+  }
+
+  &__telegram {
+    fill: var(--white);
+  }
+
+  &__github {
+    fill: var(--social-github);
+  }
+
+  &__text {
+    font-family: "DM Sans", sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--gray-default);
+  }
+
+  &__link {
+    color: var(--gray-dark);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+
+  }
+}
