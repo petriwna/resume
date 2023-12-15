@@ -29,7 +29,7 @@
                         </button>
                         <div class="list__text">
                             <p class="list__paragraph">Email</p>
-                            <a class="list__link" href="mailto:sychevska.nataliia.20@gmail.com">sychevska.nataliia.20@gmail.com</a>
+                            <a class="list__link" href="mailto:sychevska.nataliia.20@gmail.com" target="_blank">sychevska.nataliia.20@gmail.com</a>
                         </div>
                     </li>
                     <li class="list__item">
@@ -51,7 +51,8 @@
                         </button>
                         <div class="list__text">
                             <p class="list__paragraph">Address</p>
-                            <a class="list__link" href="https://maps.app.goo.gl/NbAwHweXtRGYL2ie7">Kyiv, Ukraine</a>
+                            <a class="list__link" href="https://maps.app.goo.gl/NbAwHweXtRGYL2ie7" target="_blank">Kyiv,
+                                Ukraine</a>
                         </div>
                     </li>
                 </ul>
@@ -68,7 +69,7 @@
                         </button>
                         <div class="list__text">
                             <p class="list__paragraph">Telegram</p>
-                            <a class="list__link" href="https://t.me/@petriwna">@petriwna</a>
+                            <a class="list__link" href="https://t.me/@petriwna" target="_blank">@petriwna</a>
                         </div>
                     </li>
                     <li class="list__item">
@@ -79,7 +80,7 @@
                         </button>
                         <div class="list__text">
                             <p class="list__paragraph">Github</p>
-                            <a class="list__link" href="https://github.com/petriwna">https://github.com/petriwna</a>
+                            <a class="list__link" href="https://github.com/petriwna" target="_blank">https://github.com/petriwna</a>
                         </div>
                     </li>
                 </ul>
@@ -104,9 +105,107 @@
         </article>
     </aside>
     <main class="main">
-        <section class="project-section">project</section>
-        <section class="skills-section">skills</section>
-        <section class="education-section">education</section>
+        <div class="main__section section">
+            <section class="section__project-section project-section">
+                <h2>Latest projects</h2>
+                <ul class="project-section__project-list project-list">
+                    <li class="project-list__item">
+                        <img class="project-list__images" src="./public/images/bakery.png" alt="project bakery">
+                        <div class="project-list__text">
+                            <h3 class="project-list__title">Bakery</h3>
+                            <p class="project-list__paragraph">While doing this project, I used a methodology (BEM) for
+                                structuring my CSS, employed the
+                                Sass preprocessor for enhanced styling capabilities, implemented an adaptive layout to
+                                ensure responsiveness across devices, and used a semantic layout approach.</p>
+                            <a class="project-list__link" href="https://bakery-project12.web.app/" target="_blank">https://bakery-project12.web.app</a>
+                        </div>
+                    </li>
+                    <li class="project-list__item">
+                        <img class="project-list__images" src="./public/images/guess.png" alt="project guess number">
+                        <div class="project-list__text">
+                            <h3 class="project-list__title">Guess Number</h3>
+                            <p class="project-list__paragraph">While doing this project, I used a methodology (BEM) for
+                                structuring my CSS, employed the
+                                Sass preprocessor for enhanced styling capabilities, implemented an adaptive layout to
+                                ensure responsiveness across devices, and used a semantic layout approach.</p>
+                            <a class="project-list__link" href="https://guess-number-d7eda.web.app/" target="_blank">https://guess-number-d7eda.web.app</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="main__section section">
+            <section class="section__education-section education-section">
+                <h2 class="education-section__title">Education</h2>
+                <ul class="education-section__education-list education-list">
+                    <li class="education-list__item">
+                        <div class="education-list__top">
+                            <div class="education-list__logo education-list__logo--khai">
+                                <svg class="education-list__icon" width="42" height="32">
+                                    <use href="../public/images/icons.svg#icon-khai_white"></use>
+                                </svg>
+                            </div>
+                            <h3 class="education-list__title">Kharkiv Aviation Institute</h3>
+                        </div>
+                        <div class="education-list__text">
+                            <p class="education-list__specialty">Computer Science</p>
+                            <p class="education-list__year">Sep 2013 - Feb 2018</p>
+                        </div>
+                    </li>
+                    <li class="education-list__item">
+                        <div class="education-list__top">
+                            <div class="education-list__logo education-list__logo--dev-education">
+                                <img src="public/images/dev_education.png" alt="logo dev-education">
+                            </div>
+                            <h3 class="education-list__title">DevEducation</h3>
+                        </div>
+                        <div class="education-list__text">
+                            <p class="education-list__specialty">Frontend-розробник</p>
+                            <p class="education-list__year">Dec 2021 - Jun 2022</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="main__section section">
+            <section class="section__skills-section skills-section">
+                <h2>Skills</h2>
+                <ul class="skills-section__skill-list skill-list">
+                    <li class="skill-list__item skill-list__item--width-58"><span>HTML</span><span
+                            class="skill-list__text">CSS</span>
+                        <span class="skill-list__text">SASS</span></li>
+                    <li class="skill-list__item skill-list__item--width-40"><span>JavaScript</span><span
+                            class="skill-list__text">TypeScript</span></li>
+                    <li class="skill-list__item skill-list__item--width-30">
+                        <ul class="skill-list__list">
+                            <li>Node.js</li>
+                            <li>NestJS</li>
+                        </ul>
+                    </li>
+                    <li class="skill-list__item skill-list__item--width-30">Jest</li>
+                    <li class="skill-list__item skill-list__item--width-37">
+                        <ul class="skill-list__list">
+                            <li>Gulp</li>
+                            <li>Webpack</li>
+                        </ul>
+                    </li>
+                    <li class="skill-list__item skill-list__item--width-50">
+                        <ul class="skill-list__list">
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Postman</li>
+                        </ul>
+                    </li>
+                    <li class="skill-list__item skill-list__item--width-48">
+                        <ul class="skill-list__list">
+                            <li>DataBase</li>
+                            <li>Firebase</li>
+                            <li>Hosting</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 </div>
 </body>
