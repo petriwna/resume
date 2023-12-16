@@ -13,7 +13,8 @@
   "dependencies": {
     "del": "6.1.1",
     "firebase": "^10.7.1",
-    "sass": "1.69.5"
+    "sass": "1.69.5",
+    "cross-env": "7.0.3"
   },
   "devDependencies": {
     "eslint": "^8.55.0",

@@ -4,4 +4,8 @@
   flex-direction: column;
   gap: 24px;
   width: 100%;
+
+  @media screen and (max-width: $bp-tablet){
+    margin-left: 60px;
+  }
 }

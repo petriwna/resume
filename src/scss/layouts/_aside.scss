@@ -10,4 +10,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width: $bp-tablet){
+    width: 100%;
+  }
 }

@@ -2,10 +2,18 @@
   display: flex;
   gap: 8px;
 
+  @media screen and (max-width: $bp-tablet){
+    flex-direction: column;
+  }
+
   &__item {
     width: 50%;
     background-color: var(--gray-lightest-2);
     border-radius: 4px 0px 0px 4px;
+
+    @media screen and (max-width: $bp-tablet){
+      width: 100%;
+    }
   }
 
   &__title {

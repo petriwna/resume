@@ -3,10 +3,19 @@
   flex-direction: column;
   gap: 24px;
 
+  @media screen and (max-width: $bp-tablet){
+    align-self: center;
+  }
+
   &__image {
     border-radius: 50%;
     width: 264px;
     height: 264px;
+
+    @media screen and (max-width: $bp-tablet){
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &__title {
