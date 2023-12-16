@@ -32,4 +32,24 @@
     height: 148px;
     width: 100%;
   }
+
+  &__link {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__button {
+    background-color: var(--secondary-lighter);
+    border: none;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    fill: var(--secondary-default);
+  }
 }
