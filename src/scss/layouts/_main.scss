@@ -8,5 +8,9 @@
 
   @media screen and (max-width: $bp-tablet){
     width: 100%;
+    background-image: url("./../../public/images/aside-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
