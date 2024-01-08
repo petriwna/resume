@@ -1,15 +1,12 @@
 import gulp from 'gulp';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
-import concat from 'gulp-concat';
 import rename from 'gulp-rename';
 import imagemin from 'gulp-imagemin';
 import sass from 'gulp-dart-sass';
 import connect from 'gulp-connect';
 import rimraf from 'gulp-rimraf';
 import htmlmin from 'gulp-htmlmin';
-import inject from 'gulp-inject';
-import replace from 'gulp-replace';
 
 // Paths
 const paths = {
@@ -58,7 +55,7 @@ gulp.task('server', () => {
     connect.server({
         root: 'dist',
         livereload: true,
-        port: 3000
+        port: 3008
     });
 });
 
