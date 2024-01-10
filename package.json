@@ -8,7 +8,8 @@
     "cmd": "gulp",
     "build": "yarn cmd default",
     "watch": "yarn cmd watch",
-    "clear": "yarn cmd clean"
+    "clear": "yarn cmd clean",
+    "deploy": "firebase deploy --only hosting:resume-front-end"
   },
   "dependencies": {
     "del": "6.1.1",
