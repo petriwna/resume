@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
     <link rel="stylesheet" href="css/style.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/print.min.css" media="print">
+    <link rel="stylesheet" type="text/css" href="css/print.min.css" media="print"/>
+    <link
+            rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 </head>
 <body>
 <div class="container">
@@ -19,139 +22,177 @@
                 <h2 class="header__position">Front End Developer</h2>
             </div>
         </header>
-        <div class="aside__articles-print">
-        <article class="aside__article article">
-            <section class="article__section">
-                <ul class="article__list list">
-                    <li class="list__item">
-                        <button class="list__button">
-                            <svg class="list__icon" width="28" height="28">
-                                <use href="../public/images/icons.svg#icon-mail"></use>
-                            </svg>
-                        </button>
-                        <div class="list__text">
-                            <p class="list__paragraph">Email</p>
-                            <a class="list__link" href="mailto:sychevska.nataliia.20@gmail.com" target="_blank">sychevska.nataliia.20@gmail.com</a>
-                        </div>
-                    </li>
-                    <li class="list__item">
-                        <button class="list__button">
-                            <svg class="list__icon" width="28" height="28">
-                                <use href="../public/images/icons.svg#icon-phone"></use>
-                            </svg>
-                        </button>
-                        <div class="list__text">
-                            <p class="list__paragraph">Phone</p>
-                            <a class="list__link" href="tel:+380986171139">+ 38 (098) 617 11 39</a>
-                        </div>
-                    </li>
-                    <li class="list__item">
-                        <button class="list__button">
-                            <svg class="list__icon" width="28" height="28">
-                                <use href="../public/images/icons.svg#icon-location"></use>
-                            </svg>
-                        </button>
-                        <div class="list__text">
-                            <p class="list__paragraph">Address</p>
-                            <a class="list__link" href="https://maps.app.goo.gl/NbAwHweXtRGYL2ie7" target="_blank">Kyiv,
-                                Ukraine</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </article>
-        <article class="aside__article article">
-            <section class="article__section">
-                <ul class="article__list list">
-                    <li class="list__item">
-                        <button class="list__button list__button--telegram">
-                            <svg class="list__telegram" width="28" height="28">
-                                <use href="../public/images/icons.svg#icon-telegram"></use>
-                            </svg>
-                        </button>
-                        <div class="list__text">
-                            <p class="list__paragraph">Telegram</p>
-                            <a class="list__link" href="https://t.me/@petriwna" target="_blank">@petriwna</a>
-                        </div>
-                    </li>
-                    <li class="list__item">
-                        <button class="list__button list__button--github">
-                            <svg class="list__github" width="44" height="44">
-                                <use href="../public/images/icons.svg#icon-github"></use>
-                            </svg>
-                        </button>
-                        <div class="list__text">
-                            <p class="list__paragraph">Github</p>
-                            <a class="list__link" href="https://github.com/petriwna" target="_blank">https://github.com/petriwna</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </article>
-        <article class="aside__article article">
-            <section class="article__section">
-                <ul class="article__list list">
-                    <li class="list__item">
-                        <button class="list__button list__button--not-circle">
-                            <svg class="list__telegram" width="48" height="34">
-                                <use href="../public/images/icons.svg#icon-Flag-icon"></use>
-                            </svg>
-                        </button>
-                        <div class="list__text">
-                            <p class="list__paragraph">English</p>
-                            <p class="list__link">A2 (Pre-Intermedia)</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </article>
+        <div class="aside__articles aside__articles-print">
+            <article class="aside__article article">
+                <section class="article__section">
+                    <ul class="article__list list">
+                        <li class="list__item">
+                            <button class="list__button">
+                                <svg class="list__icon" width="28" height="28">
+                                    <use href="../public/images/icons.svg#icon-mail"></use>
+                                </svg>
+                            </button>
+                            <div class="list__text">
+                                <p class="list__paragraph">Email</p>
+                                <a class="list__link" href="mailto:sychevska.nataliia.20@gmail.com" target="_blank">sychevska.nataliia.20@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <button class="list__button">
+                                <svg class="list__icon" width="28" height="28">
+                                    <use href="../public/images/icons.svg#icon-phone"></use>
+                                </svg>
+                            </button>
+                            <div class="list__text">
+                                <p class="list__paragraph">Phone</p>
+                                <a class="list__link" href="tel:+380986171139">+ 38 (098) 617 11 39</a>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <button class="list__button">
+                                <svg class="list__icon" width="28" height="28">
+                                    <use href="../public/images/icons.svg#icon-location"></use>
+                                </svg>
+                            </button>
+                            <div class="list__text">
+                                <p class="list__paragraph">Address</p>
+                                <a class="list__link" href="https://maps.app.goo.gl/NbAwHweXtRGYL2ie7" target="_blank">Kyiv,
+                                    Ukraine</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <article class="aside__article article">
+                <section class="article__section">
+                    <ul class="article__list list">
+                        <li class="list__item">
+                            <button class="list__button list__button--telegram">
+                                <svg class="list__telegram" width="28" height="28">
+                                    <use href="../public/images/icons.svg#icon-telegram"></use>
+                                </svg>
+                            </button>
+                            <div class="list__text">
+                                <p class="list__paragraph">Telegram</p>
+                                <a class="list__link" href="https://t.me/petriwna" target="_blank">@petriwna</a>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <button class="list__button list__button--github">
+                                <svg class="list__github" width="44" height="44">
+                                    <use href="../public/images/icons.svg#icon-github"></use>
+                                </svg>
+                            </button>
+                            <div class="list__text">
+                                <p class="list__paragraph">Github</p>
+                                <a class="list__link" href="https://github.com/petriwna" target="_blank">https://github.com/petriwna</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <article class="aside__article article">
+                <section class="article__section">
+                    <ul class="article__list list">
+                        <li class="list__item">
+                            <button class="list__button list__button--not-circle">
+                                <svg class="list__telegram" width="48" height="34">
+                                    <use href="../public/images/icons.svg#icon-Flag-icon"></use>
+                                </svg>
+                            </button>
+                            <div class="list__text">
+                                <p class="list__paragraph">English</p>
+                                <p class="list__link">A2 (Pre-Intermediate)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
         </div>
     </aside>
     <main class="main">
         <div class="main__section section">
             <section class="section__project-section project-section">
                 <h2>Latest projects</h2>
-                <ul class="project-section__project-list project-list">
-                    <li class="project-list__item">
-                        <img class="project-list__images" src="./public/images/bakery.png" alt="project bakery">
-                        <div class="project-list__text">
-                            <h3 class="project-list__title">Bakery</h3>
-                            <p class="project-list__paragraph">During this project, I used a BEM methodology to
-                                structure my CSS, employed the Sass preprocessor for advanced styling capabilities,
-                                implemented adaptive layout to ensure responsiveness across devices, and used a semantic
-                                layout approach.</p>
-                            <div class="project-list__link">
-                                <button class="project-list__button">
-                                    <svg class="project-list__icon" width="25" height="25">
-                                        <use href="../public/images/icons.svg#icon-link"></use>
-                                    </svg>
-                                </button>
-                                <a class="project-list__link" href="https://bakery-project12.web.app/" target="_blank">https://bakery-project12.web.app</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project-list__item">
-                        <img class="project-list__images" src="./public/images/guess.png" alt="project guess number">
-                        <div class="project-list__text">
-                            <h3 class="project-list__title">Guess Number</h3>
-                            <p class="project-list__paragraph">The project utilised the BEM methodology for CSS
-                                structuring, Sass preprocessor for advanced styling, and a semantic approach to layout.
-                                JavaScript was used for interactivity and logic in the web application. Unit testing of
-                                functions was done using Jest to ensure reliability and adherence to requirements.
-                                ESLint was used to maintain consistent code quality throughout the development
-                                process.</p>
-                            <div class="project-list__link">
-                                <button class="project-list__button">
-                                    <svg class="project-list__icon" width="25" height="25">
-                                        <use href="../public/images/icons.svg#icon-link"></use>
-                                    </svg>
-                                </button>
-                                <a class="project-list__link" href="https://petriwna.github.io/03_Guess_Number/"
-                                   target="_blank">https://petriwna.github.io/03_Guess_Number/</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="project-section__slider">
+                    <div class="project-section__container swiper-container">
+                        <ul class="project-section__project-list swiper-wrapper">
+                            <li class="swiper-slide">
+                                <article class="project-card">
+                                    <img class="project-card__images" src="./public/images/project-bakery.png"
+                                         alt="project bakery">
+                                    <div class="project-card__text">
+                                        <h3 class="project-card__title">Bakery</h3>
+                                        <p class="project-card__paragraph">For this project, I used a BEM methodology to
+                                            structure
+                                            my CSS, employed the Sass preprocessor for advanced styling capabilities,
+                                            implemented
+                                            adaptive layout to ensure responsiveness across devices, and used a semantic
+                                            layout
+                                            approach.</p>
+                                        <div class="project-card__link">
+                                            <button class="project-card__button">
+                                                <svg class="project-card__icon" width="25" height="25">
+                                                    <use href="../public/images/icons.svg#icon-link"></use>
+                                                </svg>
+                                            </button>
+                                            <a class="project-card__link" href="https://bakery-project12.web.app/"
+                                               target="_blank">https://bakery-project12.web.app</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="project-card">
+                                    <img class="project-card__images" src="./public/images/project-guess-number.png"
+                                         alt="project guess number">
+                                    <div class="project-card__text">
+                                        <h3 class="project-card__title">Guess Number</h3>
+                                        <p class="project-card__paragraph">The project used the BEM methodology for CSS
+                                            structuring,
+                                            the Sass preprocessor for advanced styling, and a semantic approach to
+                                            layout.
+                                            JavaScript was used for interactivity and logic in the web application.</p>
+                                        <div class="project-card__link">
+                                            <button class="project-card__button">
+                                                <svg class="project-card__icon" width="25" height="25">
+                                                    <use href="../public/images/icons.svg#icon-link"></use>
+                                                </svg>
+                                            </button>
+                                            <a class="project-card__link"
+                                               href="https://petriwna.github.io/03_Guess_Number/"
+                                               target="_blank">https://petriwna.github.io/03_Guess_Number/</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="project-card">
+                                    <img class="project-card__images" src="./public/images/portfolio.png"
+                                         alt="screen my portfolio site">
+                                    <div class="project-card__text">
+                                        <h3 class="project-card__title">My Portfolio</h3>
+                                        <p class="project-card__paragraph">I used the BEM methodology to structure CSS,
+                                            used the Sass preprocessor for advanced styling capabilities, implemented
+                                            responsive layout to ensure correct display on different devices, and used a
+                                            semantic layout approach.</p>
+                                        <div class="project-card__link">
+                                            <button class="project-card__button">
+                                                <svg class="project-card__icon" width="25" height="25">
+                                                    <use href="../public/images/icons.svg#icon-link"></use>
+                                                </svg>
+                                            </button>
+                                            <a class="project-card__link"
+                                               href="https://petriwna.github.io/portfolio/"
+                                               target="_blank">https://petriwna.github.io/portfolio/</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                </div>
             </section>
         </div>
         <div class="main__section section">
@@ -191,32 +232,32 @@
             <section class="section__skills-section skills-section">
                 <h2>Skills</h2>
                 <ul class="skills-section__skill-list skill-list">
-                    <li class="skill-list__item skill-list__item--width-58"><span>HTML</span><span
+                    <li class="skill-list__item skill-list__item--one"><span>HTML</span><span
                             class="skill-list__text">CSS</span>
                         <span class="skill-list__text">SASS</span></li>
-                    <li class="skill-list__item skill-list__item--width-40"><span>JavaScript</span><span
+                    <li class="skill-list__item skill-list__item--two"><span>JavaScript</span><span
                             class="skill-list__text">TypeScript</span></li>
-                    <li class="skill-list__item skill-list__item--width-30">
+                    <li class="skill-list__item skill-list__item--three">Jest</li>
+                    <li class="skill-list__item skill-list__item--four">
                         <ul class="skill-list__list">
                             <li>Node.js</li>
                             <li>NestJS</li>
                         </ul>
                     </li>
-                    <li class="skill-list__item skill-list__item--width-30">Jest</li>
-                    <li class="skill-list__item skill-list__item--width-37">
+                    <li class="skill-list__item skill-list__item--five">
                         <ul class="skill-list__list">
                             <li>Gulp</li>
                             <li>Webpack</li>
                         </ul>
                     </li>
-                    <li class="skill-list__item skill-list__item--width-50">
+                    <li class="skill-list__item skill-list__item--six">
                         <ul class="skill-list__list">
                             <li>Docker</li>
                             <li>Git</li>
                             <li>Postman</li>
                         </ul>
                     </li>
-                    <li class="skill-list__item skill-list__item--width-48">
+                    <li class="skill-list__item skill-list__item--seven">
                         <ul class="skill-list__list">
                             <li>DataBase</li>
                             <li>Firebase Hosting</li>
@@ -228,21 +269,23 @@
     </main>
 </div>
 <script type="module">
-    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js';
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+    import {getAnalytics} from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js';
+    import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
 
     const firebaseConfig = {
-      apiKey: process.env.API_KEY,
-      authDomain: process.env.AUTH_DOMAIN,
-      projectId: process.env.PROJECT_ID,
-      storageBucket: process.env.STORAGE_BUCKET,
-      messagingSenderId: process.env.MESSAGING_SENDER_ID,
-      appId: process.env.APP_ID,
-      measurementId: process.env.MEASUREMENT_ID,
+        apiKey: process.env.API_KEY,
+        authDomain: process.env.AUTH_DOMAIN,
+        projectId: process.env.PROJECT_ID,
+        storageBucket: process.env.STORAGE_BUCKET,
+        messagingSenderId: process.env.MESSAGING_SENDER_ID,
+        appId: process.env.APP_ID,
+        measurementId: process.env.MEASUREMENT_ID,
     };
 
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/project-slider.js"></script>
 </body>
 </html>

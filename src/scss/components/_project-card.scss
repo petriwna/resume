@@ -1,20 +1,12 @@
-.project-list {
+.project-card {
+  background-color: var(--gray-lightest-2);
+  border-radius: 4px 0px 0px 4px;
+  position: relative;
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 444px;
 
-  @media screen and (max-width: $bp-tablet){
-    flex-direction: column;
-  }
-
-  &__item {
-    width: 50%;
-    background-color: var(--gray-lightest-2);
-    border-radius: 4px 0px 0px 4px;
-
-    @media screen and (max-width: $bp-tablet){
-      width: 100%;
-    }
-  }
 
   &__title {
     color: var(--gray-darker);
@@ -36,11 +28,6 @@
     padding: 24px;
   }
 
-  &__images {
-    height: 148px;
-    width: 100%;
-  }
-
   &__link {
     display: flex;
     gap: 8px;
@@ -60,5 +47,9 @@
 
   &__icon {
     fill: var(--secondary-default);
+  }
+
+  &__images {
+    height: 220px;
   }
 }
