@@ -6,7 +6,6 @@ const dotenv = require('dotenv');
 const dotenvExpand = require('dotenv-expand');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 const envs = dotenv.config();
@@ -171,16 +170,6 @@ module.exports = {
     minimize: true,
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': dotenv.parsed,
-      'process.env.API_KEY': JSON.stringify(process.env.API_KEY),
-      'process.env.AUTH_DOMAIN': JSON.stringify(process.env.AUTH_DOMAIN),
-      'process.env.PROJECT_ID': JSON.stringify(process.env.PROJECT_ID),
-      'process.env.STORAGE_BUCKET': JSON.stringify(process.env.STORAGE_BUCKET),
-      'process.env.MESSAGING_SENDER_ID': JSON.stringify(process.env.MEASUREMENT_ID),
-      'process.env.APP_ID': JSON.stringify(process.env.APP_ID),
-      'process.env.MEASUREMENT_ID': JSON.stringify(process.env.MEASUREMENT_ID),
-    }),
     new CleanWebpackPlugin({ verbose: true }),
     !isDevMode && new MiniCssExtractPlugin(),
     new CopyPlugin({
