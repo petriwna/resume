@@ -1,6 +1,6 @@
 {
   "main.css": "auto/main.css",
-  "main.js": "auto/main-948304f1.js",
+  "main.js": "auto/main-5fb503aa.js",
   "public/images/photo.png": "auto/public/images/photo.png",
   "public/images/project-bakery.png": "auto/public/images/project-bakery.png",
   "public/images/project-guess-number.png": "auto/public/images/project-guess-number.png",
@@ -33,5 +33,5 @@
   "public/images/dev_education.png": "auto/public/images/dev_education.png",
   "public/images/point.svg": "auto/public/images/point.svg",
   "main.css.map": "auto/main.css.map",
-  "main-948304f1.js.map": "auto/main-948304f1.js.map"
+  "main-5fb503aa.js.map": "auto/main-5fb503aa.js.map"
 }
