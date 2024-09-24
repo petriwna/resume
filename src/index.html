@@ -1,281 +1,289 @@
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume</title>
-    <link
-            rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+  <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
 </head>
 <body>
 <div class="container">
-    <aside class="aside">
-        <header class="aside__header header">
-            <img class="header__image" alt="resume photo" src="./public/images/photo.png">
-            <div class="header__title">
-                <h1 class="header__name">Sychevska Nataliia</h1>
-                <h2 class="header__position">Front End Developer</h2>
-            </div>
-        </header>
-        <div class="aside__articles aside__articles-print">
-            <article class="aside__article article">
-                <section class="article__section">
-                    <ul class="article__list list">
-                        <li class="list__item">
-                            <button class="list__button">
-                                <svg class="list__icon" width="28" height="28">
-                                    <use href="public/images/icons.svg#icon-mail"></use>
-                                </svg>
-                            </button>
-                            <div class="list__text">
-                                <p class="list__paragraph">Email</p>
-                                <a class="list__link" href="mailto:sychevska.nataliia.20@gmail.com" target="_blank">sychevska.nataliia.20@gmail.com</a>
-                            </div>
-                        </li>
-                        <li class="list__item">
-                            <button class="list__button">
-                                <svg class="list__icon" width="28" height="28">
-                                    <use href="public/images/icons.svg#icon-phone"></use>
-                                </svg>
-                            </button>
-                            <div class="list__text">
-                                <p class="list__paragraph">Phone</p>
-                                <a class="list__link" href="tel:+380986171139">+ 38 (098) 617 11 39</a>
-                            </div>
-                        </li>
-                        <li class="list__item">
-                            <button class="list__button">
-                                <svg class="list__icon" width="28" height="28">
-                                    <use href="public/images/icons.svg#icon-location"></use>
-                                </svg>
-                            </button>
-                            <div class="list__text">
-                                <p class="list__paragraph">Address</p>
-                                <a class="list__link" href="https://maps.app.goo.gl/NbAwHweXtRGYL2ie7" target="_blank">Kyiv,
-                                    Ukraine</a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-            <article class="aside__article article">
-                <section class="article__section">
-                    <ul class="article__list list">
-                        <li class="list__item">
-                            <button class="list__button list__button--telegram">
-                                <svg class="list__telegram" width="28" height="28">
-                                    <use href="public/images/icons.svg#icon-telegram"></use>
-                                </svg>
-                            </button>
-                            <div class="list__text">
-                                <p class="list__paragraph">Telegram</p>
-                                <a class="list__link" href="https://t.me/petriwna" target="_blank">@petriwna</a>
-                            </div>
-                        </li>
-                        <li class="list__item">
-                            <button class="list__button list__button--github">
-                                <svg class="list__github" width="44" height="44">
-                                    <use href="public/images/icons.svg#icon-github"></use>
-                                </svg>
-                            </button>
-                            <div class="list__text">
-                                <p class="list__paragraph">Github</p>
-                                <a class="list__link" href="https://github.com/petriwna" target="_blank">https://github.com/petriwna</a>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-            <article class="aside__article article">
-                <section class="article__section">
-                    <ul class="article__list list">
-                        <li class="list__item">
-                            <button class="list__button list__button--not-circle">
-                                <svg class="list__telegram" width="48" height="34">
-                                    <use href="public/images/icons.svg#icon-Flag-icon"></use>
-                                </svg>
-                            </button>
-                            <div class="list__text">
-                                <p class="list__paragraph">English</p>
-                                <p class="list__link">A2 (Pre-Intermediate)</p>
-                            </div>
-                        </li>
-                        <li class="list__item">
-                            <button class="list__button list__button--not-circle">
-                                <svg class="list__telegram" width="48" height="34">
-                                    <use href="public/images/icons.svg#icon-ua-flag"></use>
-                                </svg>
-                            </button>
-                            <div class="list__text">
-                                <p class="list__paragraph">Ukrainian</p>
-                                <p class="list__link">Native speaker</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-        </div>
-    </aside>
-    <main class="main">
-        <div class="main__section section">
-            <section class="section__project-section project-section">
-                <h2>Latest projects</h2>
-                <div class="project-section__slider">
-                    <div class="project-section__container swiper-container">
-                        <ul class="project-section__project-list swiper-wrapper">
-                            <li class="swiper-slide">
-                                <article class="project-card">
-                                    <img class="project-card__images" src="./public/images/project-bakery.png"
-                                         alt="project bakery">
-                                    <div class="project-card__text">
-                                        <h3 class="project-card__title">Bakery</h3>
-                                        <p class="project-card__paragraph">For this project, I used a BEM methodology to
-                                            structure
-                                            my CSS, employed the Sass preprocessor for advanced styling capabilities,
-                                            implemented
-                                            adaptive layout to ensure responsiveness across devices, and used a semantic
-                                            layout
-                                            approach.</p>
-                                        <div class="project-card__link">
-                                            <button class="project-card__button">
-                                                <svg class="project-card__icon" width="25" height="25">
-                                                    <use href="public/images/icons.svg#icon-link"></use>
-                                                </svg>
-                                            </button>
-                                            <a class="project-card__link" href="https://bakery-project12.web.app/"
-                                               target="_blank">https://bakery-project12.web.app</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="swiper-slide">
-                                <article class="project-card">
-                                    <img class="project-card__images" src="./public/images/project-guess-number.png"
-                                         alt="project guess number">
-                                    <div class="project-card__text">
-                                        <h3 class="project-card__title">Guess Number</h3>
-                                        <p class="project-card__paragraph">The project used the BEM methodology for CSS
-                                            structuring,
-                                            the Sass preprocessor for advanced styling, and a semantic approach to
-                                            layout.
-                                            JavaScript was used for interactivity and logic in the web application.</p>
-                                        <div class="project-card__link">
-                                            <button class="project-card__button">
-                                                <svg class="project-card__icon" width="25" height="25">
-                                                    <use href="public/images/icons.svg#icon-link"></use>
-                                                </svg>
-                                            </button>
-                                            <a class="project-card__link"
-                                               href="https://petriwna.github.io/03_Guess_Number/"
-                                               target="_blank">https://petriwna.github.io/03_Guess_Number/</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="swiper-slide">
-                                <article class="project-card">
-                                    <img class="project-card__images" src="./public/images/portfolio.png"
-                                         alt="screen my portfolio site">
-                                    <div class="project-card__text">
-                                        <h3 class="project-card__title">My Portfolio</h3>
-                                        <p class="project-card__paragraph">I used the BEM methodology to structure CSS,
-                                            used the Sass preprocessor for advanced styling capabilities, implemented
-                                            responsive layout to ensure correct display on different devices, and used a
-                                            semantic layout approach.</p>
-                                        <div class="project-card__link">
-                                            <button class="project-card__button">
-                                                <svg class="project-card__icon" width="25" height="25">
-                                                    <use href="public/images/icons.svg#icon-link"></use>
-                                                </svg>
-                                            </button>
-                                            <a class="project-card__link"
-                                               href="https://petriwna.github.io/portfolio/"
-                                               target="_blank">https://petriwna.github.io/portfolio/</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                        <div class="pagination"></div>
+  <aside class="aside">
+    <header class="aside__header header">
+      <img class="header__image" alt="resume photo" src="./public/images/photo.png">
+      <div class="header__title">
+        <h1 class="header__name">Sychevska Nataliia</h1>
+        <h2 class="header__position">Front End Developer</h2>
+      </div>
+    </header>
+    <div class="aside__articles aside__articles-print">
+      <article class="aside__article article">
+        <section class="article__section">
+          <ul class="article__list list">
+            <li class="list__item">
+              <button class="list__button">
+                <svg class="list__icon" width="28" height="28">
+                  <use href="public/images/icons.svg#icon-mail"></use>
+                </svg>
+              </button>
+              <div class="list__text">
+                <p class="list__paragraph">Email</p>
+                <a class="list__link" href="mailto:sychevska.nataliia.20@gmail.com" target="_blank">sychevska.nataliia.20@gmail.com</a>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__button">
+                <svg class="list__icon" width="28" height="28">
+                  <use href="public/images/icons.svg#icon-phone"></use>
+                </svg>
+              </button>
+              <div class="list__text">
+                <p class="list__paragraph">Phone</p>
+                <a class="list__link" href="tel:+380986171139">+ 38 (098) 617 11 39</a>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__button">
+                <svg class="list__icon" width="28" height="28">
+                  <use href="public/images/icons.svg#icon-location"></use>
+                </svg>
+              </button>
+              <div class="list__text">
+                <p class="list__paragraph">Address</p>
+                <a class="list__link" href="https://maps.app.goo.gl/64C2cLN47KG66taJ8" target="_blank">Kharkiv,
+                  Ukraine</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="aside__article article">
+        <section class="article__section">
+          <ul class="article__list list">
+            <li class="list__item">
+              <button class="list__button list__button--telegram">
+                <svg class="list__telegram" width="28" height="28">
+                  <use href="public/images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+              <div class="list__text">
+                <p class="list__paragraph">Telegram</p>
+                <a class="list__link" href="https://t.me/petriwna" target="_blank">@petriwna</a>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__button list__button--github">
+                <svg class="list__github" width="44" height="44">
+                  <use href="public/images/icons.svg#icon-github"></use>
+                </svg>
+              </button>
+              <div class="list__text">
+                <p class="list__paragraph">Github</p>
+                <a class="list__link" href="https://github.com/petriwna" target="_blank">https://github.com/petriwna</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="aside__article article">
+        <section class="article__section">
+          <ul class="article__list list">
+            <li class="list__item">
+              <button class="list__button list__button--not-circle">
+                <svg class="list__telegram" width="48" height="34">
+                  <use href="public/images/icons.svg#icon-Flag-icon"></use>
+                </svg>
+              </button>
+              <div class="list__text">
+                <p class="list__paragraph">English</p>
+                <p class="list__link">A2 (Pre-Intermediate)</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <button class="list__button list__button--not-circle">
+                <svg class="list__telegram" width="48" height="34">
+                  <use href="public/images/icons.svg#icon-ua-flag"></use>
+                </svg>
+              </button>
+              <div class="list__text">
+                <p class="list__paragraph">Ukrainian</p>
+                <p class="list__link">Native speaker</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+    <footer class="footer">
+      <div class="footer__switch switch">
+        <input id="language-toggle" class="switch__input" type="checkbox">
+        <label for="language-toggle"></label>
+        <span class="switch__span switch__span--en">EN</span>
+        <span class="switch__span switch__span--ua">UA</span>
+      </div>
+    </footer>
+  </aside>
+  <main class="main">
+    <div class="main__section section">
+      <section class="section__project-section project-section">
+        <h2>Latest projects</h2>
+        <div class="project-section__slider">
+          <div class="project-section__container swiper-container">
+            <ul class="project-section__project-list swiper-wrapper">
+              <li class="swiper-slide">
+                <article class="project-card">
+                  <img class="project-card__images" src="./public/images/project-bakery.png"
+                       alt="project bakery">
+                  <div class="project-card__text">
+                    <h3 class="project-card__title">Bakery</h3>
+                    <p class="project-card__paragraph">For this project, I used a BEM methodology to
+                      structure
+                      my CSS, employed the Sass preprocessor for advanced styling capabilities,
+                      implemented
+                      adaptive layout to ensure responsiveness across devices, and used a semantic
+                      layout
+                      approach.</p>
+                    <div class="project-card__link">
+                      <button class="project-card__button">
+                        <svg class="project-card__icon" width="25" height="25">
+                          <use href="public/images/icons.svg#icon-link"></use>
+                        </svg>
+                      </button>
+                      <a class="project-card__link" href="https://bakery-project12.web.app/"
+                         target="_blank">https://bakery-project12.web.app</a>
                     </div>
-                </div>
-            </section>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="project-card">
+                  <img class="project-card__images" src="./public/images/project-guess-number.png"
+                       alt="project guess number">
+                  <div class="project-card__text">
+                    <h3 class="project-card__title">Guess Number</h3>
+                    <p class="project-card__paragraph">The project used the BEM methodology for CSS
+                      structuring,
+                      the Sass preprocessor for advanced styling, and a semantic approach to
+                      layout.
+                      JavaScript was used for interactivity and logic in the web application.</p>
+                    <div class="project-card__link">
+                      <button class="project-card__button">
+                        <svg class="project-card__icon" width="25" height="25">
+                          <use href="public/images/icons.svg#icon-link"></use>
+                        </svg>
+                      </button>
+                      <a class="project-card__link"
+                         href="https://petriwna.github.io/03_Guess_Number/"
+                         target="_blank">https://petriwna.github.io/03_Guess_Number/</a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="project-card">
+                  <img class="project-card__images" src="./public/images/portfolio.png"
+                       alt="screen my portfolio site">
+                  <div class="project-card__text">
+                    <h3 class="project-card__title">My Portfolio</h3>
+                    <p class="project-card__paragraph">I used the BEM methodology to structure CSS,
+                      used the Sass preprocessor for advanced styling capabilities, implemented
+                      responsive layout to ensure correct display on different devices, and used a
+                      semantic layout approach.</p>
+                    <div class="project-card__link">
+                      <button class="project-card__button">
+                        <svg class="project-card__icon" width="25" height="25">
+                          <use href="public/images/icons.svg#icon-link"></use>
+                        </svg>
+                      </button>
+                      <a class="project-card__link"
+                         href="https://petriwna.github.io/portfolio/"
+                         target="_blank">https://petriwna.github.io/portfolio/</a>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="pagination"></div>
+          </div>
         </div>
-        <div class="main__section section">
-            <section class="section__education-section education-section">
-                <h2 class="education-section__title">Education</h2>
-                <ul class="education-section__education-list education-list">
-                    <li class="education-list__item">
-                        <div class="education-list__top">
-                            <div class="education-list__logo education-list__logo--khai">
-                                <svg class="education-list__icon" width="42" height="32">
-                                    <use href="public/images/icons.svg#icon-khai_white"></use>
-                                </svg>
-                            </div>
-                            <h3 class="education-list__title">Kharkiv Aviation Institute</h3>
-                        </div>
-                        <div class="education-list__text">
-                            <p class="education-list__specialty">Computer Science</p>
-                            <p class="education-list__year">Sep 2013 - Feb 2018</p>
-                        </div>
-                    </li>
-                    <li class="education-list__item">
-                        <div class="education-list__top">
-                            <div class="education-list__logo education-list__logo--dev-education">
-                                <img src="public/images/dev_education.png" alt="logo dev-education">
-                            </div>
-                            <h3 class="education-list__title">DevEducation</h3>
-                        </div>
-                        <div class="education-list__text">
-                            <p class="education-list__specialty">Frontend-developer</p>
-                            <p class="education-list__year">Dec 2021 - Jun 2022</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <div class="main__section section">
-            <section class="section__skills-section skills-section">
-                <h2>Skills</h2>
-                <ul class="skills-section__skill-list skill-list">
-                    <li class="skill-list__item skill-list__item--one"><span>HTML</span><span
-                            class="skill-list__text">CSS</span>
-                        <span class="skill-list__text">SASS</span></li>
-                    <li class="skill-list__item skill-list__item--two"><span>JavaScript</span><span
-                            class="skill-list__text">TypeScript</span></li>
-                    <li class="skill-list__item skill-list__item--three">Jest</li>
-                    <li class="skill-list__item skill-list__item--four">
-                        <ul class="skill-list__list">
-                            <li>Node.js</li>
-                            <li>NestJS</li>
-                        </ul>
-                    </li>
-                    <li class="skill-list__item skill-list__item--five">
-                        <ul class="skill-list__list">
-                            <li>Gulp</li>
-                            <li>Webpack</li>
-                        </ul>
-                    </li>
-                    <li class="skill-list__item skill-list__item--six">
-                        <ul class="skill-list__list">
-                            <li>Docker</li>
-                            <li>Git</li>
-                            <li>Postman</li>
-                        </ul>
-                    </li>
-                    <li class="skill-list__item skill-list__item--seven">
-                        <ul class="skill-list__list">
-                            <li>DataBase</li>
-                            <li>Firebase Hosting</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </main>
+      </section>
+    </div>
+    <div class="main__section section">
+      <section class="section__education-section education-section">
+        <h2 class="education-section__title">Education</h2>
+        <ul class="education-section__education-list education-list">
+          <li class="education-list__item">
+            <div class="education-list__top">
+              <div class="education-list__logo education-list__logo--khai">
+                <svg class="education-list__icon" width="42" height="32">
+                  <use href="public/images/icons.svg#icon-khai_white"></use>
+                </svg>
+              </div>
+              <h3 class="education-list__title">Kharkiv Aviation Institute</h3>
+            </div>
+            <div class="education-list__text">
+              <p class="education-list__specialty">Computer Science</p>
+              <p class="education-list__year">Sep 2013 - Feb 2018</p>
+            </div>
+          </li>
+          <li class="education-list__item">
+            <div class="education-list__top">
+              <div class="education-list__logo education-list__logo--dev-education">
+                <img src="public/images/dev_education.png" alt="logo dev-education">
+              </div>
+              <h3 class="education-list__title">DevEducation</h3>
+            </div>
+            <div class="education-list__text">
+              <p class="education-list__specialty">Frontend-developer</p>
+              <p class="education-list__year">Dec 2021 - Jun 2022</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="main__section section">
+      <section class="section__skills-section skills-section">
+        <h2>Skills</h2>
+        <ul class="skills-section__skill-list skill-list">
+          <li class="skill-list__item skill-list__item--one"><span>HTML</span><span
+            class="skill-list__text">CSS</span>
+            <span class="skill-list__text">SASS</span></li>
+          <li class="skill-list__item skill-list__item--two"><span>JavaScript</span><span
+            class="skill-list__text">TypeScript</span></li>
+          <li class="skill-list__item skill-list__item--three">Jest</li>
+          <li class="skill-list__item skill-list__item--four">
+            <ul class="skill-list__list">
+              <li>Node.js</li>
+              <li>NestJS</li>
+            </ul>
+          </li>
+          <li class="skill-list__item skill-list__item--five">
+            <ul class="skill-list__list">
+              <li>Gulp</li>
+              <li>Webpack</li>
+            </ul>
+          </li>
+          <li class="skill-list__item skill-list__item--six">
+            <ul class="skill-list__list">
+              <li>Docker</li>
+              <li>Git</li>
+              <li>Postman</li>
+            </ul>
+          </li>
+          <li class="skill-list__item skill-list__item--seven">
+            <ul class="skill-list__list">
+              <li>DataBase</li>
+              <li>Firebase Hosting</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

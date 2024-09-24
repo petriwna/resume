@@ -1,0 +1,92 @@
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__span {
+    position: absolute;
+    pointer-events: none;
+    font-family: 'Outfit', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    width: 50%;
+    text-align: center;
+
+    &--en {
+      left: 0;
+      padding-left: 2px;
+      color: #fff;
+    }
+
+    &--ua {
+      right: 0;
+      padding-right: 4px;
+      color: rgb(85, 49, 167);
+    }
+  }
+
+
+  &__input {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+
+    & + label {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      padding: 2px;
+      width: 98px;
+      height: 35px;
+      background-color: #E2E6EE;;
+      box-shadow: inset 0px 5px 15px rgba(34, 33, 33, 0.3), inset 0px -5px 15px #E2E6EE;;
+      border-radius: 40px;
+    }
+
+    &:checked ~ .switch__span--en {
+      color: rgb(85, 49, 167);
+    }
+
+    &:checked ~ .switch__span--ua {
+      color: #fff;
+    }
+
+    & + label:before {
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      right: 2px;
+      background-color: rgb(85, 49, 167);
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+      border-radius: 40px;
+    }
+
+    & + label:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      bottom: 4px;
+      width: 48px;
+      background-color: rgb(85, 49, 167);
+      border-radius: 52px;
+      transition: margin 0.2s;
+    }
+
+    &:checked + label:after {
+      margin-left: 42px;
+    }
+
+    &:checked ~ .switch__span--en {
+      color: rgb(85, 49, 167);
+    }
+
+    &:checked ~ .switch__span--ua {
+      color: #fff;
+    }
+  }
+}
